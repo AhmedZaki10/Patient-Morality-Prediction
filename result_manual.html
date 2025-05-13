@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Prediction Result</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; text-align: center; }
+        .container { max-width: 800px; margin: auto; }
+        .result { font-size: 1.2em; margin: 20px 0; }
+        .btn { padding: 10px 20px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px; }
+        .btn:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <p class="result">The predicted outcome is: <strong>{{ prediction }}</strong></p>
+        <a href="{{ url_for('manual_input') }}" class="btn">Enter Another Record</a>
+        <br><br>
+        <a href="{{ url_for('home') }}" class="btn">Back to Home</a>
+    </div>
+</body>
+</html>
